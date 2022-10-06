@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "gandhi";
+  src: url("../fonts/GandhiSans-Regular-webfont.eot");
+  src: url("../fonts/GandhiSans-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/GandhiSans-Regular-webfont.woff") format("woff"),
+    url("../fonts/GandhiSans-Regular-webfont.ttf") format("truetype"),
+    url("../fonts/GandhiSans-Regular-webfont.svg#gandhi_sansregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "daysregular";
+  src: url("../fonts/Days-webfont.eot");
+  src: url("../fonts/Days-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Days-webfont.woff") format("woff"),
+    url("../fonts/Days-webfont.ttf") format("truetype"),
+    url("../fonts/Days-webfont.svg#daysregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "enigmaticbold";
+  src: url("../fonts/EnigmaB_2-webfont.eot");
+  src: url("../fonts/EnigmaB_2-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/EnigmaB_2-webfont.woff") format("woff"),
+    url("../fonts/EnigmaB_2-webfont.ttf") format("truetype"),
+    url("../fonts/EnigmaB_2-webfont.svg#enigmaticbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "amblebold";
+  src: url("../fonts/Amble-Bold-webfont.eot");
+  src: url("../fonts/Amble-Bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Amble-Bold-webfont.woff") format("woff"),
+    url("../fonts/Amble-Bold-webfont.ttf") format("truetype"),
+    url("../fonts/Amble-Bold-webfont.svg#amblebold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  // background-color: #2A203B;
+  font-family: "gandhi";
+}
+.dw-container {
+  // background-color: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+  // nav bar
+  #dw__navbar {
+    background: #222;
+    border: none;
+    #dw__logo {
+      filter: invert(100%);
+    }
+    .dropdown-toggle svg,
+    .dropdown-toggle .caret {
+      filter: invert(100%);
+    }
+  }
+
+  // left column nav
+  .nav > li > a:focus,
+  .nav > li > a:hover {
+    background-color: #777;
+  }
+  #dokuwiki__aside img.media.img-responsive {
+    // mix-blend-mode: multiply;
+    display: none;
+  }
+
+  body,
+  .panel-default {
+    background-color: #333;
+    color: #efefef;
+    border-color: #555;
+  }
+  legend {
+    color: #efefef;
+  }
+  a {
+    color: rgb(0, 153, 255);
+    &:hover {
+      color: rgb(135, 185, 232);
+    }
+    &.urlextern {
+      // TODO
+    }
+  }
+  .alert-warning {
+    color: #f7ba59;
+    background-color: #7a4e09;
+    border-color: #925e0b;
+  }
+  div.dokuwiki div.inclmeta {
+    color: #eee;
+    abbr.published,
+    span.author {
+      background: none;
+      padding-left: 0;
+    }
+  }
+  .wrap_round,
+  .plugin_wrap {
+    color: #222;
+    p {
+      color: #222;
+      //   min-height: 68px;
+      //   height: 100%;
+      //   display: flex;
+      //   align-items: center;
+    }
+  }
+  .wrap_info {
+    background: #eee;
+  }
+  .wrap_alert {
+  }
+
+  .table-striped {
+    tbody > tr:nth-of-type(2n + 1) {
+      background: #555;
+      td {
+        border: none;
+      }
+    }
+    tbody > tr:nth-of-type(2n) td {
+      border: none;
+    }
+  }
+
+  //   Admin pages
+  #administration {
+    svg {
+      filter: invert(100%);
+    }
+  }
+  #config__manager label {
+    color: #eee !important;
+  }
+  #config__manager tr.default .input,
+  #config__manager tr.default input,
+  #config__manager tr.default textarea,
+  #config__manager tr.default select,
+  #config__manager .selectiondefault {
+    background-color: #aaa;
+  }
+  .dokuwiki div.ui-admin #admin__version {
+    color: #eee;
+  }
+}
