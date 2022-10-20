@@ -37,6 +37,10 @@ h4 {
   font-family: "amblebold";
 }
 
+p {
+  line-height: 1.6;
+}
+
 a.urlextern {
   word-wrap: break-word;
 }
@@ -55,7 +59,7 @@ a.urlextern {
     background: @darkergrey;
     border: none;
     #dw__logo {
-      filter: invert(100%);
+      filter: hue-rotate(180deg) invert(100%);
     }
     .dropdown-toggle svg,
     .dropdown-toggle .caret {
@@ -141,7 +145,8 @@ a.urlextern {
   .wrap_round,
   .plugin_wrap {
     color: @darkergrey;
-    p, ol, li {
+    p,
+    li {
       color: @darkergrey;
       //   min-height: 68px;
       //   height: 100%;
