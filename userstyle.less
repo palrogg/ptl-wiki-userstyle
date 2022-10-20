@@ -38,6 +38,14 @@ h4 {
 }
 
 @media (prefers-color-scheme: dark) {
+  // toggle on mobile
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    .icon-bar {
+      background-color: @light;
+    }
+  }
+
   // nav bar
   #dw__navbar {
     background: @darkergrey;
